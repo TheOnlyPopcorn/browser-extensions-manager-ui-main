@@ -1,4 +1,9 @@
 const themeButton = document.getElementById('themeButton');
+const checkboxes = document.querySelectorAll('.check input');
+const active = document.querySelector('.active');
+const all = document.querySelector('.all');
+const inactive = document.querySelector('.inactive');
+
 
 themeButton.addEventListener('click', () => {
     if (document.getElementById("themeButton").classList.contains("Sun")) {
@@ -25,3 +30,40 @@ themeButton.addEventListener('click', () => {
     });
     }
     });
+
+  Array.from(checkboxes).forEach(checkbox => {
+    checkbox.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        checkbox.parentElement.parentElement.parentElement.classList.add("active"); 
+      } else {
+        checkbox.parentElement.parentElement.parentElement.classList.remove("active"); 
+
+      }
+    });
+  });
+
+all.addEventListener('click', () => {
+  Array.from(checkboxes).forEach(checkbox => {
+    checkbox.parentElement.parentElement.parentElement.style.display = "grid";
+  });
+});
+
+active.addEventListener('click', () => {
+  Array.from(checkboxes).forEach(checkbox => {
+    if (checkbox.checked) {
+      checkbox.parentElement.parentElement.parentElement.style.display = "grid";
+    } else {
+      checkbox.parentElement.parentElement.parentElement.style.display = "none";
+    }
+  });
+});
+
+inactive.addEventListener('click', () => {
+  Array.from(checkboxes).forEach(checkbox => {
+    if (!checkbox.checked) {
+      checkbox.parentElement.parentElement.parentElement.style.display = "grid";
+    } else {
+      checkbox.parentElement.parentElement.parentElement.style.display = "none";
+    }
+  });
+});
