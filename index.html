@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./styles.css"> 
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="darkBody">
+
+  <h1 id="head" class="darkHead">
+    <img src="./assets/images/logo.svg" alt="Logo">
+    <button id="themeButton" class="Sun"></button>
+  </h1>
+  <h2 class="middle">
+   <p id="extentionList" >Extensions List</p>
+   <ul>
+     <li id="listItems" class="darkList">All</li>
+     <li id="listItems" class="darkList">Active</li>
+     <li id="listItems" class="darkList">Inactive</li>
+   </ul>
+  </h2>
+
+  <div class="container">
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-devlens.svg" alt="DevLens Icon" class="icon">
+      <span class="text">
+        <h3 id="text">DevLens</h3>
+      <p id="text">Quickly inspect page layouts and visualize element boundaries.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+        <div class="check">
+          <input id="check" type="checkbox">
+          <label for="check"></label>
+        </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-style-spy.svg" alt="StyleSpy Icon" class="icon">
+      <span class="text">
+        <h3 id="text">StyleSpy</h3>
+      <p id="text">Instantly analyze and copy CSS from any webpage element.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check1" type="checkbox">
+        <label for="check1"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-speed-boost.svg" alt="SpeedBoost Icon" class="icon">
+      <span class="text">
+        <h3 id="text">SpeedBoost</h3>
+      <p id="text">Optimizes browser resource usage to accelerate page loading.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check2" type="checkbox">
+        <label for="check2"></label>
+      </div>
+
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-json-wizard.svg" alt="JSONWizard Icon" class="icon">
+      <span class="text">
+        <h3 id="text">JSONWizard</h3>
+      <p id="text">Formats, validates, and prettifies JSON responses in-browser.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check3" type="checkbox">
+        <label for="check3"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro Icon" class="icon">
+      <span class="text">
+        <h3 id="text">TabMaster Pro</h3>
+      <p id="text">Organizes browser tabs into groups and sessions.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check4" type="checkbox">
+        <label for="check4"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy Icon" class="icon">
+      <span class="text">
+        <h3 id="text">ViewportBuddy</h3>
+      <p id="text">Simulates various screen resolutions directly within the browser.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check5" type="checkbox">
+        <label for="check5"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-markup-notes.svg" alt="Markup Notes Icon" class="icon">
+      <span class="text">
+        <h3 id="text">Markup Notes</h3>
+      <p id="text">Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check6" type="checkbox">
+        <label for="check6"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-grid-guides.svg" alt="GridGuides Icon" class="icon">
+      <span class="text">
+        <h3 id="text">GridGuides</h3>
+      <p id="text">Overlay customizable grids and alignment guides on any webpage.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check7" type="checkbox">
+        <label for="check7"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-palette-picker.svg" alt="Palette Picker Icon" class="icon">
+      <span class="text">
+        <h3 id="text">Palette Picker</h3>
+      <p id="text">Instantly extracts color palettes from any webpage.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check8" type="checkbox">
+        <label for="check8"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-link-checker.svg" alt="LinkChecker Icon" class="icon">
+      <span class="text">
+        <h3 id="text">LinkChecker</h3>
+      <p id="text">Scans and highlights broken links on any page.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+        <button id="removeButton" class="darkRemove">Remove</button>
+        <div class="check">
+          <input id="check9" type="checkbox">
+          <label for="check9"></label>
+        </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot Icon" class="icon">
+      <span class="text">
+        <h3 id="text">DOM Snapshot</h3>
+      <p id="text">Capture and export DOM structures quickly.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check10" type="checkbox">
+        <label for="check10"></label>
+      </div>
+      </span>
+    </div>
+
+    <div id="card" class="darkCard">
+      <span class="content">
+        <img src="./assets/images/logo-console-plus.svg" alt="ConsolePlus Icon" class="icon">
+      <span class="text">
+        <h3 id="text">ConsolePlus</h3>
+      <p id="text">Enhanced developer console with advanced filtering and logging.</p>
+      </span>
+      </span>
+      <span class="cardButtons">
+      <button id="removeButton" class="darkRemove">Remove</button>
+      <div class="check">
+        <input id="check11" type="checkbox">
+        <label for="check11"></label>
+      </div>
+      </span>
+    </div>
+  </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
